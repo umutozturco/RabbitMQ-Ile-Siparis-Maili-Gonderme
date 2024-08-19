@@ -1,0 +1,167 @@
+﻿@model DashboardViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dashboard {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .stat-box {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+            .stat-box h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .stat-box p {
+                font-size: 28px;
+                margin: 0;
+            }
+
+        .recent-orders, .most-sold-products {
+            margin-top: 30px;
+        }
+
+            .recent-orders h2, .most-sold-products h2 {
+                font-size: 28px;
+                color: #333333;
+                margin-bottom: 15px;
+                border-bottom: 2px solid #007bff;
+                padding-bottom: 10px;
+            }
+
+            .recent-orders ul, .most-sold-products ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .recent-orders li, .most-sold-products li {
+                background-color: #f1f1f1;
+                padding: 15px;
+                border-radius: 8px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: background-color 0.3s ease;
+            }
+
+                .recent-orders li:hover, .most-sold-products li:hover {
+                    background-color: #e9ecef;
+                }
+
+                .recent-orders li span, .most-sold-products li span {
+                    display: block;
+                    color: #555555;
+                }
+
+                    .recent-orders li span:first-child, .most-sold-products li span:first-child {
+                        font-weight: bold;
+                        color: #333333;
+                    }
+
+        .btn-back {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+            .btn-back:hover {
+                background-color: #0056b3;
+                text-decoration: none;
+                color: #ffffff;
+            }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Panel</h1>
+        <a href="/RabbitMQ" class="btn-back" style="background-color:#152833">Anasayfaya Dön</a> <!-- Anasayfaya Dön Butonu -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="stat-box">
+                    <h2>Toplam Siparişler</h2>
+                    <p>@Model.TotalOrders</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-box">
+                    <h2>Toplam Gelir</h2>
+                    <p>@Model.TotalRevenue.ToString("C")</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-box">
+                    <h2>Satılan Toplam Ürün</h2>
+                    <p>@Model.TotalProductsSold</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recent-orders">
+            <h2>Son Siparişler</h2>
+            <ul>
+                @foreach (var order in Model.RecentOrders)
+                {
+                    <li>
+                        <span>@order.CustomerName</span>
+                        <span>@order.TotalAmount.ToString("C")</span>
+                        <span>@order.OrderDate.ToString("g")</span>
+                    </li>
+                }
+            </ul>
+        </div>
+
+        <div class="most-sold-products">
+            <h2>En Çok Satılan Ürünler</h2>
+            <ul>
+                @foreach (var product in Model.MostSoldProducts)
+                {
+                    <li>
+                        <span>Ürün: @product.ProductName</span>
+                        <span>Toplam Satış: @product.QuantitySold</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

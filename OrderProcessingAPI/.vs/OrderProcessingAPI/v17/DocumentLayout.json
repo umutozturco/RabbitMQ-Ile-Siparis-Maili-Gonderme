@@ -1,0 +1,495 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\services\\emailsendingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\services\\emailsendingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\views\\ordersmvc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\views\\ordersmvc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\views\\ordersmvc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\views\\ordersmvc\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\services\\rabbitmqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\services\\rabbitmqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\models\\emailmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\models\\emailmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\controllers\\rabbitmqcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\controllers\\rabbitmqcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\controllers\\ordersapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\controllers\\ordersapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\views\\rabbitmq\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\views\\rabbitmq\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\views\\ordersmvc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\views\\ordersmvc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\controllers\\ordersmvccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\controllers\\ordersmvccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\views\\products\\_editproductpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\views\\products\\_editproductpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\models\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\models\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\models\\orderdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\models\\orderdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|c:\\users\\umut\\source\\repos\\orderprocessingapi\\orderprocessingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{625D7966-0719-4000-A90C-B0389DB0D5B9}|OrderProcessingAPI\\OrderProcessingAPI.csproj|solutionrelative:orderprocessingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 103,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\OrdersMvc\\Index.cshtml",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Views\\OrdersMvc\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\OrdersMvc\\Index.cshtml",
+              "RelativeToolTip": "OrderProcessingAPI\\Views\\OrdersMvc\\Index.cshtml",
+              "ViewState": "AQIAAG0AAAAAAAAAAAASwHkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T07:23:06.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAApwBMAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T08:21:37.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\Order.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T14:13:53.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Models\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Models\\OrderDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T14:12:03.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "OrderProcessingAPI\\Views\\Products\\Index.cshtml",
+              "ViewState": "AQIAALoAAAAAAAAAAAASwMMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T06:33:39.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmailSendingService.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Services\\EmailSendingService.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Services\\EmailSendingService.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Services\\EmailSendingService.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Services\\EmailSendingService.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAASwGAAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T08:41:53.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Models\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\DashboardViewModel.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Models\\DashboardViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T08:00:43.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "OrderProcessingAPI\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAqwHQAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T07:58:20.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Controllers\\DashboardController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwCQAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T07:57:36.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\OrdersMvc\\Details.cshtml",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Views\\OrdersMvc\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\OrdersMvc\\Details.cshtml",
+              "RelativeToolTip": "OrderProcessingAPI\\Views\\OrdersMvc\\Details.cshtml",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAqwHcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T07:42:58.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Program.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Program.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T07:06:07.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RabbitMQService.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Services\\RabbitMQService.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Services\\RabbitMQService.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Services\\RabbitMQService.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Services\\RabbitMQService.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAEwEIAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T19:54:14.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmailMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\EmailMessage.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Models\\EmailMessage.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\EmailMessage.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Models\\EmailMessage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T20:20:56.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAewEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T08:21:01.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RabbitMQController.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Controllers\\RabbitMQController.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Controllers\\RabbitMQController.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Controllers\\RabbitMQController.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Controllers\\RabbitMQController.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAASwEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T20:14:10.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\OrdersMvc\\Edit.cshtml",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Views\\OrdersMvc\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\OrdersMvc\\Edit.cshtml",
+              "RelativeToolTip": "OrderProcessingAPI\\Views\\OrdersMvc\\Edit.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAiwF0AAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T07:43:11.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrdersApiController.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Controllers\\OrdersApiController.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Controllers\\OrdersApiController.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Controllers\\OrdersApiController.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Controllers\\OrdersApiController.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAASwIkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T14:26:20.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\RabbitMQ\\Index.cshtml",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Views\\RabbitMQ\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\RabbitMQ\\Index.cshtml",
+              "RelativeToolTip": "OrderProcessingAPI\\Views\\RabbitMQ\\Index.cshtml",
+              "ViewState": "AQIAAKcAAAAAAAAAAAAqwLkAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T11:20:51.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\Product.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T12:10:55.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_EditProductPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\Products\\_EditProductPartial.cshtml",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Views\\Products\\_EditProductPartial.cshtml",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Views\\Products\\_EditProductPartial.cshtml",
+              "RelativeToolTip": "OrderProcessingAPI\\Views\\Products\\_EditProductPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T07:01:27.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrdersMvcController.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Controllers\\OrdersMvcController.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Controllers\\OrdersMvcController.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Controllers\\OrdersMvcController.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Controllers\\OrdersMvcController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAqwGwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T14:10:52.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwBYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T11:34:23.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\OrderDto.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Models\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\OrderDto.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Models\\OrderDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwAsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T14:14:12.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OrderDetailDto.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\OrderDetailDto.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Models\\OrderDetailDto.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\OrderDetailDto.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Models\\OrderDetailDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T06:53:28.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Models\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\ApiResponse.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Models\\ApiResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T14:27:59.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\ProductDto.cs",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\Models\\ProductDto.cs",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\Models\\ProductDto.cs",
+              "RelativeToolTip": "OrderProcessingAPI\\Models\\ProductDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T13:53:03.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "OrderProcessingAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Umut\\source\\repos\\OrderProcessingAPI\\OrderProcessingAPI\\appsettings.json",
+              "RelativeToolTip": "OrderProcessingAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-14T09:08:24.086Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 297,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+﻿@model OrderProcessingAPI.Models.Order
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sipariş Detayları</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            margin-top: 40px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+
+        dl.row {
+            margin-bottom: 20px;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #495057;
+        }
+
+        dd {
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .btn-secondary {
+            margin-top: 20px;
+            background-color: #6c757d;
+            border: none;
+        }
+
+            .btn-secondary:hover {
+                background-color: #5a6268;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sipariş Detayları</h2>
+        <dl class="row">
+            <dt class="col-sm-3">Müşteri Adı</dt>
+            <dd class="col-sm-9">@Model.CustomerName</dd>
+
+            <dt class="col-sm-3">Müşteri Email</dt>
+            <dd class="col-sm-9">@Model.CustomerEmail</dd>
+
+            <dt class="col-sm-3">Müşteri GSM</dt>
+            <dd class="col-sm-9">@Model.CustomerGSM</dd>
+
+            <dt class="col-sm-3">Toplam Tutar</dt>
+            <dd class="col-sm-9">@Model.TotalAmount.ToString("C")</dd>
+
+            <dt class="col-sm-3">Sipariş Tarihi</dt>
+            <dd class="col-sm-9">@Model.OrderDate.ToString("dd/MM/yyyy")</dd>
+        </dl>
+
+        <h4>Ürünler</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Ürün Açıklaması</th>
+                    <th>Birim Fiyatı</th>
+                    <th>Miktar</th>
+                    <th>Toplam Fiyat</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var detail in Model.OrderDetails)
+                {
+                    <tr>
+                        <td>@detail.ProductId</td>
+                        <td>@detail.UnitPrice.ToString("C")</td>
+                        <td>@detail.Amount</td>
+                        <td>@(detail.UnitPrice * detail.Amount)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <a href="/OrdersMvc" class="btn btn-secondary">Geri Dön</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

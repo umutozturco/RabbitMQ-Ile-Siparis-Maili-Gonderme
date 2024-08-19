@@ -1,0 +1,314 @@
+﻿@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewData["Title"] = "RabbitMQ Page";
+    var productDescriptions = ViewBag.ProductDescriptions as SelectList;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"]</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2b2d42;
+            font-family: Tahoma, sans-serif;
+            margin-left: 0;
+            transition: margin-left 0.3s ease;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #d90429;
+            overflow-x: hidden;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000;
+        }
+
+            .sidebar a {
+                padding: 16px;
+                text-decoration: none;
+                font-size: 18px;
+                color: #fff;
+                display: block;
+                transition: background-color 0.3s ease;
+            }
+
+                .sidebar a:hover {
+                    background-color: #b2031b;
+                }
+
+            .sidebar .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                color: #fff;
+                cursor: pointer;
+            }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #d90429;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1001;
+        }
+
+        .container.custom-container {
+            max-width: 600px;
+            margin: 5rem auto;
+        }
+
+        .custom-form {
+            background-color: #8d99ae;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .custom-form .form-label {
+                font-weight: 500;
+            }
+
+            .custom-form .form-control {
+                border-radius: 0.25rem;
+                border: 1px solid #ced4da;
+                padding: 1rem;
+                transition: all 0.3s ease;
+            }
+
+                .custom-form .form-control:focus {
+                    border-color: #80bdff;
+                    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+                }
+
+        .form-floating {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+            .form-floating .form-control {
+                height: auto;
+                padding: 0.5rem;
+                padding-top: 1.5rem;
+                font-size: 0.875rem;
+            }
+
+                .form-floating .form-control::placeholder {
+                    opacity: 0;
+                }
+
+            .form-floating label {
+                position: absolute;
+                top: 0.5rem;
+                left: 0.75rem;
+                padding: 0 0.25rem;
+                pointer-events: none;
+                transition: all 0.3s ease;
+                color: #6c757d;
+            }
+
+            .form-floating .form-control:focus ~ label,
+            .form-floating .form-control:not(:placeholder-shown) ~ label {
+                top: -1.35rem;
+                left: 0.1rem;
+                font-size: 95%;
+                color: #152833;
+            }
+
+        .form-select {
+            height: auto;
+            padding: 0.75rem;
+            font-size: 0.875rem;
+            border-radius: 0.25rem;
+            border: 1px solid #ced4da;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+            .form-select:focus {
+                border-color: #80bdff;
+                box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+            }
+
+        .custom-btn {
+            background-color: #d90429;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.25rem;
+            font-size: 1.25rem;
+        }
+
+            .custom-btn:hover {
+                background-color: darkred;
+                color: #fff;
+                text-decoration: none;
+            }
+
+        .custom-alert {
+            margin-top: 1rem;
+            border-radius: 0.25rem;
+            color: #8d99ae;
+        }
+
+        #addProductBtn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+            #addProductBtn:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    <div class="sidebar" id="mySidebar">
+        <span class="closebtn" onclick="closeNav()">×</span>
+        <a href="#" onclick="navigateToProducts()">Ürünler</a>
+        <!-- Siparişler sayfasına gitmek için buton -->
+        <a href="/OrdersMvc" onclick="navigateToOrders()">Siparişler</a>
+        <a href="/Dashboard" onclick="navigateToDashboard()">Panel</a>
+    </div>
+    </div>
+
+
+    <div id="main">
+        <button class="openbtn" onclick="toggleNav()">☰ Menü</button>
+
+        <div class="container custom-container">
+            <div class="text-center">
+                <h1 class="display-4 mb-4" style="color:#8d99ae">Mail Gönderme Ekranı</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <form id="emailForm" method="post" action="/RabbitMQ/SendEmail" class="custom-form">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="CustomerName" name="CustomerName" placeholder="Müşteri Adını Girin" required>
+                            <label for="CustomerName">Müşteri Adı</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="CustomerEmail" name="CustomerEmail" placeholder="Müşteri Emailini Girin" required>
+                            <label for="CustomerEmail">Müşteri Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="CustomerGSM" name="CustomerGSM" placeholder="Müşteri GSM Numarasını Girin">
+                            <label for="CustomerGSM">Müşteri GSM (Opsiyonel)</label>
+                        </div>
+                        <div id="productsContainer">
+                            <div class="product-entry mb-3">
+                                <div class="form-floating mb-2">
+                                    <select class="form-select" name="ProductId[]" required>
+                                        <option value="">Ürün Seçin</option>
+                                        @if (productDescriptions != null)
+                                        {
+                                            @foreach (var item in productDescriptions)
+                                            {
+                                                <option value="@item.Value">@item.Text</option>
+                                            }
+                                        }
+                                    </select>
+                                    <label></label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="number" class="form-control" name="Quantities[]" placeholder="Miktar Girin" required>
+                                    <label>Miktar</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="addProductBtn" class="custom-btn mt-4 w-100" onclick="addProductEntry()">
+                            <i class="bi bi-plus-circle"></i> Ürün Ekle
+                        </button>
+                        <button type="submit" class="custom-btn mt-4 w-100">
+                            <i class="bi bi-envelope-fill"></i> Mail Gönder
+                        </button>
+                    </form>
+
+                    @if (ViewData["Message"] != null)
+                    {
+                        <div class="alert alert-@ViewData["MessageType"] custom-alert">
+                            @ViewData["Message"]
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.transform = "translateX(0)";
+            document.body.style.marginLeft = "250px";
+            document.querySelector(".openbtn").style.display = "none";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.transform = "translateX(-100%)";
+            document.body.style.marginLeft = "0";
+            document.querySelector(".openbtn").style.display = "block";
+        }
+
+        function toggleNav() {
+            var sidebar = document.getElementById("mySidebar");
+            if (sidebar.style.transform === "translateX(0)") {
+                closeNav();
+            } else {
+                openNav();
+            }
+        }
+
+        function navigateToProducts() {
+            window.location.href = "/Products";
+        }
+
+        function navigateToOrders() {
+            window.location.href = "/OrdersMvc";
+        }
+        function navigateToDashboard() {
+            window.location.href = "/Dashboard"
+        }
+
+        function addProductEntry() {
+            const container = document.getElementById("productsContainer");
+            const productEntry = document.createElement("div");
+            productEntry.className = "product-entry mb-3";
+            productEntry.innerHTML = `
+                                                <div class="form-floating mb-2">
+                                                    <select class="form-select" name="ProductId[]" required>
+                                                        <option value="">Ürün Seçin</option>
+        @if (productDescriptions != null)
+        {
+            @foreach (var item in productDescriptions)
+            {
+                                                                                                <option value="@item.Value">@item.Text</option>
+            }
+        }
+                                                    </select>
+                                                    <label></label>
+                                                </div>
+                                                <div class="form-floating mb-2">
+                                                    <input type="number" class="form-control" name="Quantities[]" placeholder="Miktar Girin" required>
+                                                    <label>Miktar</label>
+                                                </div>
+                                            `;
+            container.appendChild(productEntry);
+        }
+    </script>
+</body>
+</html>

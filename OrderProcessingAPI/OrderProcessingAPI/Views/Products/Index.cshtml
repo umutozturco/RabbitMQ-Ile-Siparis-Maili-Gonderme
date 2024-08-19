@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray; 
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #ffffff; 
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff; 
+            color: #ffffff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; 
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #ffffff; 
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3; 
+            }
+
+        .btn-info {
+            background-color: #17a2b8;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+            .btn-info:hover {
+                background-color: #117a8b;
+            }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+            .btn-danger:hover {
+                background-color: #c82333;
+            }
+
+        .btn-back {
+            background-color: aliceblue; 
+            color: #152833;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            text-decoration: none; 
+            display: inline-block; 
+        }
+
+            .btn-back:hover {
+                background-color: lightgray; 
+            }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 8px; 
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+            .btn-success:hover {
+                background-color: #218838;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ürünler</h1>
+
+        <button class="btn btn-primary" id="addProductBtn">Ürün Ekle</button>
+        <a href="/RabbitMQ" class="btn btn-back">Ana Sayfaya Dön</a>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ürün Adı</th>
+                    <th>Birim Fiyatı</th>
+                    <th>Birim</th>
+                    <th>Kategori</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.Description</td>
+                        <td>@product.FormattedUnitPrice</td>
+                        <td>@product.Unit</td>
+                        <td>@product.Category</td>
+                        <td>
+                            <button class="btn btn-info edit-btn" data-product-id="@product.Id">Düzenle</button>
+                            <button class="btn btn-danger delete-btn" data-product-id="@product.Id">Sil</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div id="addProductForm" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form method="post" action="/Products">
+                    <div class="form-group">
+                        <label for="Description">Ürün Adı</label>
+                        <input type="text" class="form-control" id="Description" name="Description" required autocomplete="off"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="UnitPrice">Birim Fiyatı</label>
+                        <input type="number" step="0.01" class="form-control" id="UnitPrice" name="UnitPrice" required autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Unit">Birim</label>
+                        <input type="text" class="form-control" id="Unit" name="Unit" required autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Category">Kategori</label>
+                        <input type="text" class="form-control" id="Category" name="Category" required autocomplete="off" />
+                    </div>
+                    <button type="submit" class="btn btn-success">Ürün Ekle</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="editProductForm" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="editFormContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var addModal = document.getElementById("addProductForm");
+        var addBtn = document.getElementById("addProductBtn");
+        var addCloseBtn = addModal.querySelector(".close");
+
+        addBtn.onclick = function () {
+            addModal.style.display = "block";
+        }
+
+        addCloseBtn.onclick = function () {
+            addModal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == addModal) {
+                addModal.style.display = "none";
+            }
+        }
+
+        // Edit Product Modal
+        var editModal = document.getElementById("editProductForm");
+        var editCloseBtn = editModal.querySelector(".close");
+
+        document.querySelectorAll('.edit-btn').forEach(function (button) {
+            button.onclick = function () {
+                var productId = this.getAttribute('data-product-id');
+                fetch(`/Products/Edit/${productId}`)
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('editFormContainer').innerHTML = html;
+                        editModal.style.display = "block";
+                    });
+            }
+        });
+
+        editCloseBtn.onclick = function () {
+            editModal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == editModal) {
+                editModal.style.display = "none";
+            }
+        }
+
+        document.querySelectorAll('.delete-btn').forEach(function (button) {
+            button.onclick = function () {
+                var productId = this.getAttribute('data-product-id');
+                if (confirm('Bu ürünü silmek istediğinizden emin misiniz?')) {
+                    fetch(`/Products/Delete/${productId}`, {
+                        method: 'DELETE'
+                    })
+                        .then(response => {
+                            if (response.ok) {
+                                window.location.reload();
+                            } else {
+                                alert('Silme işlemi gerçekleştirilemedi.');
+                            }
+                        });
+                }
+            }
+        });
+    </script>
+</body>
+</html>

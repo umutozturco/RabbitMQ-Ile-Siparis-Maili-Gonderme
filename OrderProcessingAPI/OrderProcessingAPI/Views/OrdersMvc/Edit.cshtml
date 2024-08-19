@@ -1,0 +1,99 @@
+﻿@model OrderProcessingAPI.Models.Order
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sipariş Düzenle</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            margin-top: 40px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+            transition: border-color 0.3s ease;
+        }
+
+            .form-control:focus {
+                border-color: #007bff;
+                box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+            }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+            .btn-primary:hover {
+                background-color: #0069d9;
+            }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+            .btn-secondary:hover {
+                background-color: #5a6268;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sipariş Düzenle</h2>
+        <form method="post" action="/OrdersMvc/Edit/@Model.Id">
+            <div class="form-group">
+                <label for="CustomerName">Müşteri Adı</label>
+                <input type="text" class="form-control" id="CustomerName" name="CustomerName" value="@Model.CustomerName" required />
+            </div>
+            <div class="form-group">
+                <label for="CustomerEmail">Müşteri Email</label>
+                <input type="email" class="form-control" id="CustomerEmail" name="CustomerEmail" value="@Model.CustomerEmail" required />
+            </div>
+            <div class="form-group">
+                <label for="CustomerGSM">Müşteri GSM</label>
+                <input type="text" class="form-control" id="CustomerGSM" name="CustomerGSM" value="@Model.CustomerGSM" />
+            </div>
+            <div class="form-group">
+                <label for="TotalAmount">Toplam Tutar</label>
+                <input type="text" class="form-control" id="TotalAmount" name="TotalAmount" value="@Model.TotalAmount.ToString("C")" readonly />
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3">Kaydet</button>
+            <a href="/OrdersMvc" class="btn btn-secondary mt-3">İptal</a>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BJP1lyvl7k4Vy7FGlS/+1CMdgd1gSydA2xP0oEie/IQ=",
+  "Source": "OrderProcessingAPI",
+  "BasePath": "_content/OrderProcessingAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

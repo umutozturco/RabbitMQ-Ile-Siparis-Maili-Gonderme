@@ -1,0 +1,130 @@
+﻿@model IEnumerable<OrderProcessingAPI.Models.Order>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Siparişler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Eski sayfa arka plan rengi */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #343a40;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #dee2e6;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .btn-primary {
+            background-color: blue; /* Ana Sayfa butonu arka plan rengi */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+            .btn-primary:hover {
+                background-color: darkblue; /* Buton hover rengi */
+            }
+
+        .btn-info {
+            background-color: darkgoldenrod; /* Düzenle butonu arka plan rengi */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            
+        }
+
+            .btn-info:hover {
+                background-color: darkgoldenrod; /* Düzenle butonu hover rengi */
+            }
+
+        .btn-danger {
+            background-color: #dc3545;
+            font-family:Tahoma/* Sil butonu arka plan rengi */
+        }
+
+            .btn-danger:hover {
+                background-color: #c82333; /* Sil butonu hover rengi */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Siparişler</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Sipariş ID</th>
+                    <th>Müşteri Adı</th>
+                    <th>Müşteri Email</th>
+                    <th>Toplam Tutar</th>
+                    <th>Sipariş Tarihi</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td>@order.Id</td>
+                        <td>@order.CustomerName</td>
+                        <td>@order.CustomerEmail</td>
+                        <td>@order.TotalAmount.ToString("F2")</td>
+                        <td>@order.OrderDate</td>
+                        <td>
+                            <a class="btn-primary" href="/OrdersMvc/Details/@order.Id">Detaylar</a> <!-- Detaylar butonu -->
+                            <a class="btn-info" href="/OrdersMvc/Edit/@order.Id">Düzenle</a> <!-- Düzenle butonu -->
+                            <form method="post" action="/OrdersMvc/Delete/@order.Id" style="display:inline;">
+                                <button type="submit" class="btn-primary btn-danger">Sil</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <a class="btn-primary" href="/RabbitMQ">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html>
